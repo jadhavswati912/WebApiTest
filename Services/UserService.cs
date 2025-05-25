@@ -72,7 +72,7 @@ namespace Product_Details.Services
             return tokenHandler.WriteToken(token);
         }
 
-
+        //add user method 
         public async Task<User> AddUser(User user)
         {
             _context.user.Add(user);
