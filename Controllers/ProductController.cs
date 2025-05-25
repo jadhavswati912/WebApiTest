@@ -26,6 +26,7 @@ namespace WebApiTest.Controllers
         {
             _ProductService = ProductService;
         }
+        //get all products
         [HttpGet("GetAllProduct")]
         public async Task<IActionResult> GetAllProduct()
         {
