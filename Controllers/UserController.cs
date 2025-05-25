@@ -15,7 +15,10 @@ namespace Product_Details.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
-
+        /// <summary>
+        /// Constructor method to initilize config and DI
+        /// </summary>
+        /// <param name="UserService"></param>
         public UserController(IUserService UserService)
         {
             _userService = UserService;
