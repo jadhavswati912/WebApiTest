@@ -44,7 +44,7 @@ namespace WebApiTest.Services
             await _context.SaveChangesAsync();
             return existingProduct;
         }
-
+        //delete
         public async Task<string> DeleteProduct(int id)
         {
             var Existingproduct = await _context.products.FindAsync(id);
