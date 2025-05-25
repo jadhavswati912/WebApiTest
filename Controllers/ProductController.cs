@@ -34,6 +34,12 @@ namespace WebApiTest.Controllers
             return Ok(ProductList);
         }
         // POST api/<ProductController>
+        /// <summary>
+        /// Post API test 
+        /// </summary>
+        /// <param name="product"></param>
+        /// <returns></returns>
+        /// httppost
         [HttpPost]
         public async Task<IActionResult> AddProduct(Product product)
         {
