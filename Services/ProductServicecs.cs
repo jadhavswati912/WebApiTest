@@ -18,7 +18,7 @@ namespace WebApiTest.Services
         {
             var CatId = 4;
             var ProductWithCat = await _context.products.FromSqlInterpolated($"EXEC SP_GetProductByCategoryId @ProductCategoryId={CatId}").
-                ToListAsync(); /// use store procedure 
+                ToListAsync(); // use store procedure 
             
 
             return await _context.products.ToListAsync(); 
