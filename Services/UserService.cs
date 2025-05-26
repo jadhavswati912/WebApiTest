@@ -42,7 +42,7 @@ namespace Product_Details.Services
             var token = await generateJwtToken(user);
             return new AuthenticateResponse(user, token);
         }
-
+        //get all  user using condition
         public async Task<IEnumerable<User>> GetAll()
         {
             return await _context.user.Where(static x => x.isActive == true).ToListAsync();
@@ -72,7 +72,7 @@ namespace Product_Details.Services
             return tokenHandler.WriteToken(token);
         }
 
-
+        //add method
         public async Task<User> AddUser(User user)
         {
             _context.user.Add(user);
